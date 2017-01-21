@@ -1,0 +1,1 @@
+module.exports = {"main":{"js":"/client/main.js"}};

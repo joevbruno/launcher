@@ -1,0 +1,51 @@
+{
+  "presets": [
+    ["env", { "targets": { "node": true } }],
+    "react",
+    "stage-3"
+  ],
+  "sourceMaps": "both",
+  "plugins": [
+    "syntax-trailing-function-commas",
+    "transform-async-to-generator",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-runtime",
+    "transform-flow-strip-types",
+    "syntax-dynamic-import",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "actions": "./common/redux/actions/index.js",
+          "constants": "./common/redux/constants/index.js",
+          "components": "./common/components/index.js",
+          "utilities": "./common/utilities/index.js",
+          "routes": "./common/routes/index.js",
+          "api": "./common/api/index.js",
+          "selectors": "./common/redux/selectors/index.js",
+          "resources": "./common/resources/index.js",
+          "config": "./common/config/index.js"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-constant-elements",
+        "transform-react-inline-elements"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "flow-react-proptypes",
+        "transform-react-jsx-source",
+        "react-hot-loader/babel",
+        "transform-react-jsx-self"
+      ]
+    }
+  }
+}

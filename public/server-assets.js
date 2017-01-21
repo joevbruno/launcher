@@ -1,0 +1,1 @@
+module.exports = {"landing":{"js":"/client/landing.chunk.js"},"main":{"js":"/client/main.js"}};

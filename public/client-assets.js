@@ -1,0 +1,1 @@
+module.exports = {"landing":{"js":"http://localhost:5000/client/landing.chunk.js"},"main":{"js":"http://localhost:5000/client/js/main.js"},"vendors":{"js":"http://localhost:5000/client/js/vendors.js"},"common":{"js":"http://localhost:5000/client/js/common.js"}};

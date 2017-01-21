@@ -1,0 +1,42 @@
+{
+  "parser"  : "babel-eslint",
+  "plugins": [
+    "flowtype",
+    "fp",
+    "css-modules"
+  ],
+  "extends" : [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "plugin:css-modules/recommended"
+  ],
+  "globals": {
+    "__DEV__": true
+  },
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "defaultParams": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "react/forbid-prop-types": 0,
+    "react/prefer-stateless-function" : 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-dynamic-require": 0,
+    "global-require": 0,
+    "no-class-assign": 0,
+    "no-nested-ternary": 0,
+    "import/first": 0,
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/html-has-lang": 0,
+    "no-confusing-arrow": 0,
+    "import/prefer-default-export": 0,
+    "no-duplicate-imports": 0,
+    "import/no-duplicates": 2
+  }
+}
